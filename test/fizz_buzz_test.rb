@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require './lib/fizz_buzz'
+require_relative '../lib/fizz_buzz'
 
 class FizzBuzzTest < Minitest::Test
   def test_fizz_buzz

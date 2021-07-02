@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require './lib/gate'
-require './lib/ticket'
+require_relative '../lib/gate'
+require_relative '../lib/ticket'
 
 class GateTest < Minitest::Test
   def setup

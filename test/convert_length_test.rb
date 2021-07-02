@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require './lib/convert_length'
+require_relative '../lib/convert_length'
 
 class ConvertLengthTest < Minitest::Test
   def test_convert_length

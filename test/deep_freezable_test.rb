@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require './lib/bank'
-require './lib/team'
+require_relative '../lib/bank'
+require_relative '../lib/team'
 
 class DeepFreezableTest < Minitest::Test
   def test_deep_freeze_to_array
@@ -23,6 +23,6 @@ class DeepFreezableTest < Minitest::Test
     # ハッシュ自身がfreezeされているか？
     assert Bank::CURRENCIES.frozen?
     # 配列の要素がすべてfreezeされているか？
-    assert { Bank::CURRENCIES.all? { |key, value| key.frozen? && value.frozen? } }
+    assert(Bank::CURRENCIES.all? { |key, value| key.frozen? && value.frozen? })
   end
 end

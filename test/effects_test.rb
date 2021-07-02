@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require './lib/effects'
+require_relative '../lib/effects'
 
 class EffectsTest < Minitest::Test
   def test_reverse
