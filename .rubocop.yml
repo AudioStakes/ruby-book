@@ -1,6 +1,9 @@
 AllCops:
   NewCops: disable
 
+Naming/MethodParameterName:
+  MinNameLength: 1
+
 Style/Documentation:
   Enabled: false
 
